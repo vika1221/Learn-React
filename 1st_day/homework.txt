@@ -1,0 +1,6 @@
+<script src=""></script>
+
+<script async src=""></script>
+
+<script defer src=""></script>
+    In this case, the script will be fetched asynchronously but will only execute after the HTML document has been fully parsed
