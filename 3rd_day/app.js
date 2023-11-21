@@ -49,15 +49,17 @@ const container=React.createElement(
 // Above whole code using jsx
 
 const heading=(
+    <>
     <div>
         <h1>Heading 1 using jsx</h1>
         <h2>Heading 2 using jsx</h2>
         <h3>Heading 3 using jsx</h3>
     </div>
+    </>
 );
 
-const root1=ReactDOM.createRoot(document.getElementById("root"));
-root1.render(heading);
+// const root1=ReactDOM.createRoot(document.getElementById("root"));
+// root1.render(heading);
 
 // using functional component
 
