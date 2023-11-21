@@ -3,7 +3,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-//import {Foodmelalogo} from "/Images/Foodmela.png";
+import Foodmelalogo from "../4th_day/Images/Foodmela.png";
 
 /* My Food App structure will look like this, 
             1) Header
@@ -26,11 +26,7 @@ import ReactDOM from "react-dom/client";
 // Title component for display logo
 const Title = () => (
   <a href="/">
-    <img
-      className="logo"
-      src="https://images-platform.99static.com/A_Ax0GQuo_NHI0Y7XZHmFtGfBDY=/0x0:1000x1000/500x500/top/smart/99designs-contests-attachments/126/126252/attachment_126252018"
-      alt="Food Mela Logo"
-    ></img>
+    <img className="logo" src={Foodmelalogo} alt="Food Mela Logo"></img>
   </a>
 );
 
@@ -40,11 +36,13 @@ const Header = () => {
     <div className="header">
       <Title />
       <div className="nav-items">
-      <ul>
+        <ul>
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
-          <li><i class="fa-solid fa-cart-shopping"></i>Cart</li>
+          <li>
+            <i class="fa-solid fa-cart-shopping"></i>Cart
+          </li>
         </ul>
       </div>
     </div>
@@ -1921,7 +1919,13 @@ const Footer = () => {
     <div className="footer">
       Created By :-
       {/* <i class="fa-solid fa-heart"></i> */}
-      <a href="https://www.linkedin.com/in/vikash-ranjan-kumar-85aa31238/" target="_blank"> Vikash Ranjan Kumar </a>
+      <a
+        href="https://www.linkedin.com/in/vikash-ranjan-kumar-85aa31238/"
+        target="_blank"
+      >
+        {" "}
+        Vikash Ranjan Kumar{" "}
+      </a>
       <i>©</i>2023
       <strong>Food Mela</strong>
     </div>
