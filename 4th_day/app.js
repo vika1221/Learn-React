@@ -3,7 +3,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {Foodmelalogo} from "/Images/Foodmela.png";
+//import {Foodmelalogo} from "/Images/Foodmela.png";
 
 /* My Food App structure will look like this, 
             1) Header
@@ -26,7 +26,7 @@ import {Foodmelalogo} from "/Images/Foodmela.png";
 // Title component for display logo
 const Title = () => (
   <a href="/">
-    <img className="logo" src={Foodmelalogo} alt="Food Mela Logo" ></img>
+    <img className="logo" src="https://images-platform.99static.com/A_Ax0GQuo_NHI0Y7XZHmFtGfBDY=/0x0:1000x1000/500x500/top/smart/99designs-contests-attachments/126/126252/attachment_126252018" alt="Food Mela Logo" ></img>
   </a>
 );
 
