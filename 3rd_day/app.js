@@ -50,11 +50,11 @@ const container=React.createElement(
 
 const heading=(
     <>
-    <div>
-        <h1>Heading 1 using jsx</h1>
-        <h2>Heading 2 using jsx</h2>
-        <h3>Heading 3 using jsx</h3>
-    </div>
+        <div>
+            <h1>Heading 1 using jsx</h1>
+            <h2>Heading 2 using jsx</h2>
+            <h3>Heading 3 using jsx</h3>
+        </div>
     </>
 );
 
