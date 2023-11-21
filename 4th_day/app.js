@@ -7,7 +7,7 @@ import ReactDOM from "react-dom/client";
 
 /* My Food App structure will look like this, 
             1) Header
-                - Logo
+                - Title (Logo)
                 - Nav Items(right side)
                 - Cart
             2) Body
@@ -26,7 +26,11 @@ import ReactDOM from "react-dom/client";
 // Title component for display logo
 const Title = () => (
   <a href="/">
-    <img className="logo" src="https://images-platform.99static.com/A_Ax0GQuo_NHI0Y7XZHmFtGfBDY=/0x0:1000x1000/500x500/top/smart/99designs-contests-attachments/126/126252/attachment_126252018" alt="Food Mela Logo" ></img>
+    <img
+      className="logo"
+      src="https://images-platform.99static.com/A_Ax0GQuo_NHI0Y7XZHmFtGfBDY=/0x0:1000x1000/500x500/top/smart/99designs-contests-attachments/126/126252/attachment_126252018"
+      alt="Food Mela Logo"
+    ></img>
   </a>
 );
 
@@ -36,11 +40,11 @@ const Header = () => {
     <div className="header">
       <Title />
       <div className="nav-items">
-        <ul>
+      <ul>
           <li>Home</li>
           <li>About</li>
           <li>Contact</li>
-          <li> <i class="fa-solid fa-cart-shopping"> </i></li>
+          <li><i class="fa-solid fa-cart-shopping"></i>Cart</li>
         </ul>
       </div>
     </div>
@@ -1888,7 +1892,10 @@ const RestaurantCard = ({
       <h4>{cuisines.join(", ")}</h4>
       <h4>{area}</h4>
       <span>
-      <h4><i class="fa-solid fa-star"></i>{avgRating}</h4>
+        <h4>
+          <i className="star">★</i>
+          {avgRating}
+        </h4>
         <h4>{lastMileTravelString}</h4>
         <h4>{costForTwoString}</h4>
       </span>
@@ -1912,15 +1919,11 @@ const Body = () => {
 const Footer = () => {
   return (
     <div className="footer">
-      Created By
-      <i class="fa-solid fa-heart"></i>
-      <a href="https://www.linkedin.com/in/vikash-ranjan-kumar-85aa31238/" target="_blank">
-        Vikash Ranjan Kumar
-      </a>
-      <i class="fa-solid fa-copyright"></i>2023
-      <strong>
-        Food Mela
-      </strong>
+      Created By :-
+      {/* <i class="fa-solid fa-heart"></i> */}
+      <a href="https://www.linkedin.com/in/vikash-ranjan-kumar-85aa31238/" target="_blank"> Vikash Ranjan Kumar </a>
+      <i>©</i>2023
+      <strong>Food Mela</strong>
     </div>
   );
 };
@@ -1928,7 +1931,7 @@ const Footer = () => {
 // AppLayout component to show: Header, Body, Footer
 const AppLayout = () => {
   return (
-    <React.Fragment>  
+    <React.Fragment>
       <Header />
       <Body />
       <Footer />

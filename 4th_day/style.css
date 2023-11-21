@@ -19,9 +19,7 @@
     font-weight: bold;
 }
 
-
 .logo{
-    /* padding-left: 10px; */
     width: 100px;
     border-radius: 10px;
     margin: 10px;
@@ -42,6 +40,7 @@
     padding: 40px 10px 0 0;
     font-size: large;
     cursor: pointer;
+    color: black;
 }
 
 
@@ -90,7 +89,7 @@
     
 }
 
-.card > span > h4:first-child .fa-star{
+.card > span > h4:first-child .star{
     font-size: small;
     padding: 0 5px 3px 0;
     
@@ -115,7 +114,7 @@
 }
 
 .fa-heart{
-    color: rgb(254, 7, 7);
+    color: black;
 }
 
 .footer > strong{
