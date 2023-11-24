@@ -1901,6 +1901,31 @@ const RestaurantCard = ({
   );
 };
 
+              // we can do like this also
+// const RestaurantCard = (props) => {
+//   return (
+//     <div className="card">
+//       <img
+//         src={
+//           "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
+//           props?.cloudinaryImageId
+//         }
+//       />
+//       <h2>{props?.name}</h2>
+//       <h4>{props?.cuisines.join(", ")}</h4>
+//       <h4>{props?.area}</h4>
+//       <span>
+//         <h4>
+//           <i className="star">★</i>
+//           {props?.avgRating}
+//         </h4>
+//         <h4>{props?.lastMileTravelString}</h4>
+//         <h4>{props?.costForTwoString}</h4>
+//       </span>
+//     </div>
+//   );
+// };
+
 // Body Component for body section: It contain all restaurant cards
 // We are mapping restaurantList array and passing data to RestaurantCard component as props with unique key as index
 const Body = () => {
