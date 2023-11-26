@@ -1,5 +1,3 @@
-// ## Namaste React Course by Akshay Saini
-// Chapter 04 - Talk is Cheap, show me the code
 
 import React from "react";
 import ReactDOM from "react-dom/client";
