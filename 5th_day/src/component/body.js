@@ -17,6 +17,7 @@ export  const Body = () => {
     // useState: To create a state variable, searchText is local state variable
     const [searchText, setSearchText] = useState("");
     const [restaurants, setRestaurants] = useState(restaurantList);
+    const [a,setA] = useState(0);
     return (
       <>
         <div className="search-container">
@@ -30,13 +31,14 @@ export  const Body = () => {
           <button
             className="search-btn"
             onClick={() => {
+              setA(a+1);
               // filter the data
               const data = filterData(searchText, restaurants);
               // update the state of restaurants list
               setRestaurants(data);
             }}
           >
-            Search
+            Search- {"clicked  " + a + "  times" }
           </button>
         </div>
         <div className="restaurant-list">

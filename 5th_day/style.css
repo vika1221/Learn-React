@@ -49,7 +49,7 @@
 .search-container {
     margin: 20px auto;
     text-align: center;
-    max-width: 100%;
+    max-width: 75%;
     position: relative;
   }
   
@@ -70,7 +70,7 @@
   .search-container .search-btn {
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
-    background-color: gray;
+    background-color: rgb(8, 150, 193);
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
     color: #ffffff;
     text-decoration-style: solid;
