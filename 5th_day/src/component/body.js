@@ -12,12 +12,14 @@ function filterData(searchText, restaurants) {
   
 // Body Component for body section: It contain all restaurant cards
 // We are mapping restaurantList array and passing JSON data to RestaurantCard component as props with unique key as index
+console.log("rerender() from outside");
 
 export  const Body = () => {
     // useState: To create a state variable, searchText is local state variable
     const [searchText, setSearchText] = useState("");
     const [restaurants, setRestaurants] = useState(restaurantList);
     const [a,setA] = useState(0);
+    console.log("rerender()");
     return (
       <>
         <div className="search-container">
