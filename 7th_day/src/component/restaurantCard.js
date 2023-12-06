@@ -27,7 +27,7 @@ const RestaurantCard = ({
                 : { color: "white" }
           }
         >
-          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star">★</i>
           {avgRatingString}
         </h4>
         <h4>•</h4>

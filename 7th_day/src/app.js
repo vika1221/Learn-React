@@ -1,5 +1,4 @@
 
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./component/header";
@@ -26,8 +25,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"; 
                         - Rating
             3) Footer
                 - Links
-                - Copyrights
-       
+                - Copyrights       
 */
 
 // AppLayout component to render: Header, Outlet(it contain children component like body, About, Restaurant Menu etc) and Footer Component

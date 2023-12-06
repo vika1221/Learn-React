@@ -69,7 +69,7 @@ const RestaurantMenu = () => {
               ? { backgroundColor: "white", color: "black" }
               : { color: "white" }
           }>
-            <i className="fa-solid fa-star"></i>
+            <i className="fa-solid fa-star">★</i>
               <span>{restaurant?.avgRating}</span>
             </div>
             <div className="restaurant-rating-slash">|</div>
