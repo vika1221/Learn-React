@@ -1,8 +1,8 @@
-
-import { RestaurantCard } from "./restaurantcard";
-import { useEffect, useState } from "react"; // named export 
-import Shimmer from "./shimmer"; // Default export 
+import RestaurantCard from "./restaurantCard";
+import { useEffect, useState } from "react"; /* This is named export */
+import Shimmer from "./shimmer"; /* This is default export */
 import { swiggy_api_URL } from "../constant";
+import { Link } from "react-router-dom";
 
 // Filter the restaurant data according input type
 function filterData(searchText, restaurants) {
@@ -64,7 +64,7 @@ const Body = () => {
       setFilteredRestaurants(filteredData);
       setErrorMessage("");
       if (filteredData?.length === 0) {
-        setErrorMessage("No such restaurant is present 😭");
+        setErrorMessage(`Sorry, we couldn't find any results for "${searchText}"`);
       }
     } else {
       setErrorMessage("");
@@ -81,7 +81,7 @@ const Body = () => {
         <input
           type="text"
           className="search-input"
-          placeholder="Search a Restaurant"
+          placeholder="Search a restaurant you want..."
           value={searchText}
           // update the state variable searchText when we typing in input box
           onChange={(e) => setSearchText(e.target.value)}
@@ -106,7 +106,12 @@ const Body = () => {
           {/* We are mapping restaurants array and passing JSON array data to RestaurantCard component as props with unique key as restaurant.data.id */}
           {filteredRestaurants.map((restaurant) => {
             return (
-              <RestaurantCard key={restaurant?.info?.id} {...restaurant?.info} />
+              <Link
+                to={"/restaurant/" + restaurant?.info?.id}
+                key={restaurant?.info?.id}
+              >
+                <RestaurantCard {...restaurant?.info} />
+              </Link>
             );
           })}
         </div>

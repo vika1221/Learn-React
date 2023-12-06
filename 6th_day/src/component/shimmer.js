@@ -12,6 +12,7 @@ const CardShimmer = () => {
   );
 };
 
+
 const Shimmer = () => {
   return (
     <div className="shimmer-container">

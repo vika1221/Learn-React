@@ -2,8 +2,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./component/header";
-import Body  from "./component/body";  // named import
-import Footer from "./component/footer";  // default import
+import Body  from "./component/body";  
+import Footer from "./component/footer";  
 
 /* My Food App structure will look like this, 
             1) Header

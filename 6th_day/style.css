@@ -6,6 +6,16 @@
     
 }
 
+:root {
+    --header-bg-color: rgb(1, 163, 144);
+    --footer-bg-color: rgb(1, 163, 144);
+    --text-color: #000;
+    --light-green: #00ad1d;
+    --dark-green: #016034;
+    --orange: #d97919;
+    --light-red: rgb(236, 56, 56);
+  }
+
 /* Header CSS */
 .header{
     display: flex;
@@ -41,6 +51,30 @@
     font-size: large;
     cursor: pointer;
     color: black;
+}
+
+.nav-items > ul > li .logout-btn,
+.nav-items > ul > li .login-btn {
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  margin-right: 15px;
+}
+
+.nav-items > ul > li .logout-btn {
+  background-color: var(--header-bg-color);
+}
+
+.nav-items > ul > li .login-btn {
+  background-color: var(--orange);
+}
+
+.nav-items > ul > li .logout-btn:hover,
+.nav-items > ul > li .login-btn:hover {
+  background-color: var(--dark-green);
 }
 
 
@@ -133,6 +167,57 @@
     padding: 0 5px 3px 0;
     
 }
+
+/*Shimmer CSS */
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  .shimmer-card {
+    flex-basis: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-color: #d3d5df;
+    box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+  }
+  .shimmer-title {
+    width: 60%;
+    margin-top: 10px;
+  }
+  .shimmer-tags {
+    width: 80%;
+    margin-top: 4px;
+  }
+  .shimmer-details {
+    width: 100%;
+    margin-top: 18px;
+  }
+  .shimmer-container .shimmer-img {
+    height: 144px;
+    width: 230px;
+  }
+  
+  /*Animation to Shimmer Component Cards */
+  .stroke {
+    height: 15px;
+    background: #777;
+  }
+  .animate {
+    animation: shimmer 3s;
+    animation-iteration-count: infinite;
+    background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+    background-size: 1000px 100%;
+  }
+  @keyframes shimmer {
+    from {
+      background-position: -1000px 0;
+    }
+    to {
+      background-position: 1000px 0;
+    }
+  }
 
 
 
