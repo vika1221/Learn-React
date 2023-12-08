@@ -1,4 +1,4 @@
-import food from "../../Images/burger-image.png";
+import food from "../../Images/littichhokha.png";
 
 const About = () => {
   return (
